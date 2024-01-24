@@ -1,4 +1,9 @@
 
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
 button{
     background-color: maroon;
 }
@@ -6,21 +11,18 @@ button{
 .col{
     /* universal styleing for columns  */
     display: inline-block;
-    align-items: center;
-    text-align: center;
-    vertical-align: top;
-    padding: 30px;
-    margin:0;
+    padding: 10px;
 }
 
 .row{
     /* sets rows styling */
-    padding: 20px;
+    padding: 10px;
+    border: 3px solid blue;
 }
 
 @media only screen and (max-width:480px){
     .sm-4{
-        width:100%
+        width:100%;
     }
     .sm-0{
         display: none;
@@ -29,13 +31,13 @@ button{
 
 @media only screen and (min-width:481px){
     .med-2{
-        width:50%;
+        width:49.5%;
     }
 }
 
 @media only screen and (min-width: 1024px){
     .lg-1{
-        width:25%;
+        width:24.5%;
     }
 }
 
