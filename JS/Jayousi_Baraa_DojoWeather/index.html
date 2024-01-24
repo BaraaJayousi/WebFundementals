@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>branch Dojo Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="d-flex">
+        <h1 class="col-1">New tittle for update text</h1>
+        <div class="cities d-flex col-2">
+            <a onclick="loadData(this)" href="#">Burbank</a>
+            <a onclick="loadData(this)" href="#">Chicago</a>
+            <a onclick="loadData(this)" href="#">Dallas</a>
+        </div>
+    </nav>
+    <header class="d-flex">
+        <h2>San Jose</h2>
+        <div class="d-flex">
+            <p>Show temprature in</p>
+            <select id="unit-select" onchange="unitChange(this)">
+                <option value="C">C°</option>
+                <option value="F">F°</option>
+            </select>
+        </div>
+    </header>
+    <hr>
+    <main class="d-flex">
+        <article class="weather-card">
+            <h4>Today</h4>
+            <img src="assets/some_rain.png" alt="cloudy icon">
+            <p>some rain</p>
+            <div class="d-flex">
+                <span class="hottest">24.6°</span>
+                <span class="coldest">18°</span>
+            </div>
+        </article>
+        <article class="weather-card">
+            <h4>Today</h4>
+            <img src="assets/some_clouds.png" alt="cloudy icon">
+            <p>some rain</p>
+            <div class="d-flex">
+                <span class="hottest">24°</span>
+                <span class="coldest">18°</span>
+            </div>
+        </article>
+        <article class="weather-card">
+            <h4>Today</h4>
+            <img src="assets/some_clouds.png" alt="cloudy icon">
+            <p>some rain</p>
+            <div class="d-flex">
+                <span class="hottest">24°</span>
+                <span class="coldest">18°</span>
+            </div>
+        </article>
+        <article class="weather-card">
+            <h4>Today</h4>
+            <img src="assets/some_clouds.png" alt="cloudy icon">
+            <p>some rain</p>
+            <div class="d-flex">
+                <span class="hottest">24°</span>
+                <span class="coldest">18°</span>
+            </div>
+        </article>
+    </main>
+    <div id="cookie-area" class="d-flex">
+        <img class="" src="assets/cookie.png" alt="Cookie">
+        <section class="col-3">
+            <h3>Stop! Cookie time</h3>
+            <p>We use cookies (sadly not the edible ones) ot personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
+        </section>
+        <div class="">
+            <button>I Accept</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

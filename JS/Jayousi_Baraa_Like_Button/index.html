@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Like Button</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1>Network</h1>
+    </nav>
+    <header>
+        <h1>Your Feed</h1>
+    </header>
+    <main class="d-flex">
+        <aside class="col-1">
+            <article class="d-flex">
+                <img class="d-block" src="assests/user-circle.png" alt="User Icon">
+                <a href="#">Add on avatar</a>
+                <h2>James Doe</h2>
+            </article>
+        </aside>
+        <section class="col-3">
+            <article>
+                <div class="top d-flex">
+                    <h2>Neil M</h2>
+                    <div class="likes d-flex">
+                        <p>9 like(s)</p>
+                        <button id="0" onclick="incLike(this)">Like</button>
+                    </div>
+                </div>
+                <p>I just set up this new discord bot, let me know what you all think. <a href="#">link</a></p>
+            </article>
+            <article>
+                <div class="top d-flex">
+                    <h2>Neil M</h2>
+                    <div class="likes d-flex">
+                        <p>18 like(s)</p>
+                        <button id="1" onclick="incLike(this)">Like</button>
+                    </div>
+                </div>
+                <p>I just set up this new discord bot, let me know what you all think. <a href="#">link</a></p>
+            </article>
+            <article>
+                <div class="top d-flex">
+                    <h2>Neil M</h2>
+                    <div class="likes d-flex">
+                        <p>1 like(s)</p>
+                        <button id="2" onclick="incLike(this)">Like</button>
+                    </div>
+                </div>
+                <p>I just set up this new discord bot, let me know what you all think. <a href="#">link</a></p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <h1>Second approach</h1>
+        
+        <section class="col-3">
+            <article>
+                <div class="top d-flex">
+                    <h2>Neil M</h2>
+                    <div class="likes d-flex flex-reverse">
+                        <button id="btn-23" onclick="incLike2(this)">Like</button>
+                        <p>9 like(s)</p>
+                    </div>
+                </div>
+                <p>I just set up this new discord bot, let me know what you all think. <a href="#">link</a></p>
+            </article>
+            <article>
+                <div class="top d-flex">
+                    <h2>Neil M</h2>
+                    <div class="likes d-flex flex-reverse">
+                        <button id="btn-33" onclick="incLike2(this)">Like</button>
+                        <p>18 like(s)</p>
+                    </div>
+                </div>
+                <p>I just set up this new discord bot, let me know what you all think. <a href="#">link</a></p>
+            </article>
+            <article>
+                <div class="top d-flex">
+                    <h2>Neil M</h2>
+                    <div class="likes d-flex flex-reverse">
+                        <button id="btn-232" onclick="incLike2(this)">Like</button>
+                        <p>1 like(s)</p>
+                    </div>
+                </div>
+                <p>I just set up this new discord bot, let me know what you all think. <a href="#">link</a></p>
+            </article>
+        </section>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

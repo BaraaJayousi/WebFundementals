@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Clicker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="d-flex">
+        <h1 class="">Dojonary</h1>
+        <input class="" type="text" placeholder="Search">
+        <button class="" onclick="login(this)">Login</button>
+    </header>
+    <main class="d-flex align-items-flex-start">
+        <section class="col-3">
+            <article class="d-flex ">
+                <div class="left">
+                    <h1>ninja</h1>
+                    <p><em>noun</em></p>
+                    <p>Plural: <em>ninjas</em></p>
+                    <button class="btn-secondary" onclick="likeButton(this)">13 likes</button>
+                </div>
+                <div class="right col-2">
+                    <h5>A practitioner skilled in the <a href="#">Japanese</a> art of <a href="#">ninjutusu</a></h5>
+                </div>
+            </article>
+            <article class="d-flex ">
+                <div class="left">
+                    <h1>ninja</h1>
+                    <p><em>noun</em></p>
+                    <p>Plural: <em>ninjas</em></p>
+                    <button class="btn-secondary" onclick="likeButton(this)">37 likes</button>
+                </div>
+                <div class="right col-2">
+                    <h5>A <a href="#">programmer</a> who breaks down problems with <a href="#">zen</a>-like focus</h5>
+                </div>
+            </article>
+        </section>
+        <aside  class="col-1">
+            <article>
+                <h3>Dojonary is defined by <strong>YOU</strong></h3>
+                <button class="btn-tertiary" onclick="addDefinition(this)">Add Definition</button>
+            </article>
+        </aside>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

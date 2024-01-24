@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin:0;
+    font-family: sans-serif;
+}
+
+.d-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.align-items-flex-start{
+    align-items: flex-start;
+}
+
+.col-1{
+    flex:1
+}
+
+.col-2{
+    flex:2
+}
+
+.col-3{
+    flex:3
+}
+
+body{
+    width: 920px;
+    height: auto;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+h1{
+    font-size: 38px;
+}
+header{
+    background-color: #cccccc;
+    padding: 15px 20px;
+}
+
+header input[type="text"]{
+    width:60%;
+    font-size: 18px;
+    min-height: 32px;
+}
+
+button{
+    padding: 5px 20px;
+    background-color: #2b78e4;
+    color:white;
+    font-size: 18px;
+    border: 2px black solid;
+    box-shadow: 5px 2px black;
+}
+
+button:on-cl{
+    background-color: white;
+}
+
+.btn-secondary{
+    background-color: #ffd966;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px;
+}
+
+.btn-tertiary{
+    background-color: #93c47d;
+    color: black;
+    font-weight: 600;
+    width:100%;
+    margin-top: 25px;
+}
+
+main{
+    padding: 20px 0;
+}
+
+article{
+    border: 2px black solid;
+    padding: 20px 20px;
+    margin-bottom: 25px;
+}
+
+.left button{
+    
+    width:100%
+}
+
+.left p{
+    margin:0 auto;
+    margin-bottom: 15px;
+}
+
+.right h5{
+    font-size: 24px;
+    font-weight: 400;
+    padding: 0 60px;
+}
