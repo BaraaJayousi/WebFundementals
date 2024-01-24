@@ -1,0 +1,18 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 1px red dotted;
+    font-family: monospace;
+}
+
+header{
+    padding: 5px 10%;
+    background-color: black;
+    color : white;
+}
+
+main{
+    padding: 0 10%;
+    display: flex;
+    justify-content: space-between;
+}

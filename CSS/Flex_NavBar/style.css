@@ -1,0 +1,69 @@
+*{
+    /* setting robot font from google fonts, with `sans-serif as fall back font */
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav{
+    display: flex;
+    background-color: #333333;
+    height: 60px;
+    padding: 0px 20px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.nav-links{
+    width: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: end;
+}
+
+.nav-title{
+    color: white;
+    font-weight: 400;
+}
+ul.nav-links{
+    padding:0;
+    margin: 0px;
+    list-style-type: none;
+}
+.nav-links a{
+    text-decoration: none;
+    color: lightgray;
+    font-size: 16px;
+    font-weight: 200;
+    padding: 0 3px;
+}
+
+.nav-links a.active{
+    color:white;
+    font-weight: 400;
+}
+
+.nav-links a:hover{
+    color:white;
+    font-size: 18px;
+    padding: 0;
+}
+
+.nav-links .btn{
+    color:white;
+    background-color: #17a2b8;
+    font-family: cursive;
+    font-size: 16px;
+    font-weight: 400;
+    border: solid black 3px;
+    padding: 3px 15px;
+    box-shadow: 5px 3px black;
+}
+
+.nav-links .btn:hover{
+    box-shadow: 0 0 black;
+    color: #17a2b8;
+    background-color: white;
+    border-color: #17a2b8;
+}

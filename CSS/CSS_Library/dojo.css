@@ -1,0 +1,129 @@
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+/* Fixed width container class that will "auto-center" itself */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    /* height: 50px; */
+    color: black;
+    gap: 5px;
+}
+
+.col{
+    background-color: #effbfc;
+    flex:1 1 auto;
+    padding: 5px;
+}
+
+.col-2{
+    background-color: #effbfc;
+    flex: 2 1 auto;
+    padding: 5px;
+}
+
+.col-3{
+    background-color: #effbfc;
+    flex: 3 1 auto;
+    padding: 5px;
+}
+
+
+
+.btn{
+    width: 150px;
+    padding: 5px 15px;
+    background-color: #2b78e4;
+    border: 3px solid black;
+
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-family: Arial;
+    font-weight: lighter;
+
+    box-shadow: 5px 5px black;
+}
+
+.btn:hover{
+    box-shadow: 1px 5px darkblue;
+    background-color: black;
+}
+
+/* Navbar classes */
+
+.nav{
+    display: flex;
+    background-color: #333333;
+    height: 60px;
+    padding: 0px 20px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.nav-links{
+    width: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: end;
+}
+
+.nav-title{
+    color: white;
+    font-weight: 400;
+}
+ul.nav-links{
+    padding:0;
+    margin: 0px;
+    list-style-type: none;
+}
+.nav-links a{
+    text-decoration: none;
+    color: lightgray;
+    font-size: 16px;
+    font-weight: 200;
+    padding: 0 10px;
+    flex:2
+}
+
+.nav-links a.active{
+    color:white;
+    font-weight: 400;
+}
+
+.nav-links a:hover{
+    color:white;
+    font-size: 18px;
+    padding: 0;
+}
+
+.nav-links .btn{
+    color:white;
+    background-color: #17a2b8;
+    font-family: cursive;
+    font-size: 16px;
+    font-weight: 400;
+    border: solid black 3px;
+    padding: 3px 15px;
+    box-shadow: 5px 3px black;
+}
+
+.nav-links .btn:hover{
+    box-shadow: 0 0 black;
+    color: #17a2b8;
+    background-color: white;
+    border-color: #17a2b8;
+}
