@@ -114,9 +114,30 @@
         <div class="custome-divider"></div>
         <!-- Contact us here -->
         <div class="container">
-            <div class="row">
-                <h1 class="col">Contact Us</h1>
-            </div>
+            <form action="#" class="row g-4 pt-4 pb-4">
+                <h1 class="col-6 offset-3 text-center">Have Some Questions?</h1>
+                <div class="col-md-6">
+                    <input type="text" name="full-name" id="name" class="form-control" placeholder="Full Name" required>
+                </div>
+                <div class="col-md-6">
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Email" required>
+                </div>
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <span class="input-group-text">123</span>
+                        <input type="text" name="phone-number" id="phone-number" class="form-control" placeholder="059XXXXXXX" required>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" name="organisation" id="organisation" class="form-control" placeholder="Organisation name" required>
+                </div>
+                <div class="col-12">
+                    <textarea name="message" id="message" class="form-control" rows="5" placeholder="Type your message here"></textarea>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Send Messsage</button>
+                </div>
+            </form>
         </div>
 </body>
 </html>
