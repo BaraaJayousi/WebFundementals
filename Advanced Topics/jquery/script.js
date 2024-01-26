@@ -24,8 +24,8 @@ $(()=>{
         }
     });
 
-    $("#txt-change").dclick(function(){
-        $(this)
+    $("#txt-change").dblclick(function(){
+        $(this).text("You have double clicked me")
     })
 });
 
