@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 600;
+    font-size: 48px;
+    color:whitesmoke;
+}
+
+body{
+    margin: 10% auto;
+    max-width: fit-content;
+}
+
+#calculator{
+    background-color: #222222;
+    padding: 15px 10px;
+}
+
+#display{
+    margin: 5px 0;
+    direction: rtl;
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    margin: 5px;
+}
+
+button{
+    padding: 5px .425em;
+    margin: 5px;
+    border-radius: 50%;
+    border: none;
+    font-size: 32px;
+    background-color: #666666;
+}
+
+.operator{
+    background-color: #ff8c00;
+}
+
+#equals{
+    background-color: #cccccc;
+    color: #222222;
+    width: 100%;
+    border-radius: 50px;
+}
