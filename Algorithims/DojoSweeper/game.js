@@ -50,7 +50,7 @@ function howMany(i, j, element) {
 // 1. draw the number onto the button instead of alerting it
 // 2. at the start randomly place 10 ninjas into theDojo with at most 1 on each spot
 // 3. if you click on a ninja you must restart the game 
-//    dojoDiv.innerHTML = `<button onclick="location.reload()">restart</button>`;
+// dojoDiv.innerHTML = `<button onclick="location.reload()">restart</button>`;
     
 // start the game
 // message to greet a user of the game
