@@ -17,13 +17,14 @@
     background-color: red;
     height: 130px;
     width: 2px;
+    transform: rotate(0deg);
 }
 
 #hour {
     background-color: black;
     height: 100px;
     width: 8px;
-    transform: rotate(125deg);
+    transform: rotate(275deg);
 }
 
 #minutes {
@@ -32,3 +33,13 @@
     width: 4px;
     transform: rotate(255deg);
 }  
+
+.mark{
+    position: absolute;
+    background-color: black;
+    height: 15px;
+    width: 6px;
+    top: 100%;
+    left: 100%;
+    transform-origin: center center;
+}
