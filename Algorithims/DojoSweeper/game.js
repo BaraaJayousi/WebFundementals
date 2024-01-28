@@ -25,6 +25,7 @@ function render(theDojo) {
 //        under the adjacent (all sides and corners) squares.
 //        Use i and j as the indexes to check theDojo.
 
+
 function howMany(i, j, element) {
     console.log({i, j});
     let ninjasSum = 0;
@@ -32,20 +33,19 @@ function howMany(i, j, element) {
         for (let x = -1; x < 2; x++) {
             //This condition to avoid summing the clicked button
             if(x !=0 || y != 0){
-                console.log("first:condition: ", i+y < theDojo.length  && i+y > -1)
-                console.log("second condition: ", j+x < theDojo[i].length && j+x > -1)
+                // console.log("first:condition: ", i+y < theDojo.length  && i+y > -1)
+                // console.log("second condition: ", j+x < theDojo[i].length && j+x > -1)
                 if((i+y < theDojo.length && i+y > -1) && (j+x < theDojo[i].length  && j+x > -1)){
-                    console.log(`i+y: ${i+y}     j+x: ${j+x}      Value: ${theDojo[i+y][j+x]}`)
-                    if(theDojo[i+y][j+x] ){
-                        ninjasSum += theDojo[i+y][j+x]; 
-                    }
+                    // ninjasSum += theDojo[i+y][j+x]; 
+                    let buttonIndex = ((Math.abs((i+y)*10) ) + (j+x))
+                    tatamiElemArr[buttonIndex].innerText = theDojo[i+y][j+x]
                 }
             }
         }
     }
-    alert(`There are ${ninjasSum} ninjas in the adjacent squares`);
+    // alert(`There are ${ninjasSum} ninjas in the adjacent squares`);
 }
-    
+
 // BONUS CHALLENGES
 // 1. draw the number onto the button instead of alerting it
 // 2. at the start randomly place 10 ninjas into theDojo with at most 1 on each spot
@@ -61,4 +61,8 @@ console.log("%c" + "GOOD LUCK THIS IS A CHALLENGE!", style);
 console.table(theDojo);
 // adds the rows of buttons into <div id="the-dojo"></div> 
 dojoDiv.innerHTML = render(theDojo);    
+
+//load all tatami buttons into an element array, must be declared after rendering the dojo
+let tatamiElemArr = document.querySelectorAll(".tatami")
+
 
