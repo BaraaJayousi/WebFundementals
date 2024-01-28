@@ -5,28 +5,45 @@ var theDojo = [ [1, 0, 1, 1, 1, 0, 4, 0, 8, 0],
                 [6, 0, 3, 3, 0, 2, 0, 3, 0, 4],
                 [0, 0, 3, 3, 0, 0, 2, 2, 3, 0],
                 [0, 0, 0, 0, 5, 0, 1, 2, 0, 6],
-                [2, 2, 2, 2, 0, 7, 1, 1, 1, 0],
+                [2, 2, 1, 2, 0, 7, 1, 1, 1, 0],
                 [5, 2, 0, 2, 0, 0, 0, 1, 1, 2],
-                [9, 2, 2, 2, 0, 7, 0, 1, 1, 0] ];
+                [10, 2, 2, 2, 0, 7, 0, 1, 1, 0] ];
 var dojoDiv = document.querySelector("#the-dojo");
     
 // Creates the rows of buttons for this game
 function render(theDojo) {
-  var result = "";
-  for(var i=0; i<theDojo.length; i++) {
-    for(var j=0; j<theDojo[i].length; j++) {
-      result += `<button class="tatami" onclick="howMany(${i}, ${j}, this)"></button>`;
+    var result = "";
+    for(var i=0; i<theDojo.length; i++) {
+        for(var j=0; j<theDojo[i].length; j++) {
+        result += `<button class="tatami" onclick="howMany(${i}, ${j}, this)" ></button>`;
+        }
     }
-  }
-  return result;
-}
+    return result;
+    }
     
 // TODO - Make this function tell us how many ninjas are hiding 
 //        under the adjacent (all sides and corners) squares.
 //        Use i and j as the indexes to check theDojo.
+
 function howMany(i, j, element) {
-  console.log({i, j});
-  alert("TODO - determine how many ninjas are hiding in adjacent squares");
+    console.log({i, j});
+    let ninjasSum = 0;
+    for (let y = -1; y < 2; y++) {
+        for (let x = -1; x < 2; x++) {
+            //This condition to avoid summing the clicked button
+            if(x !=0 || y != 0){
+                console.log("first:condition: ", i+y < theDojo.length  && i+y > -1)
+                console.log("second condition: ", j+x < theDojo[i].length && j+x > -1)
+                if((i+y < theDojo.length && i+y > -1) && (j+x < theDojo[i].length  && j+x > -1)){
+                    console.log(`i+y: ${i+y}     j+x: ${j+x}      Value: ${theDojo[i+y][j+x]}`)
+                    if(theDojo[i+y][j+x] ){
+                        ninjasSum += theDojo[i+y][j+x]; 
+                    }
+                }
+            }
+        }
+    }
+    alert(`There are ${ninjasSum} ninjas in the adjacent squares`);
 }
     
 // BONUS CHALLENGES
