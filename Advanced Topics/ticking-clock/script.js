@@ -22,25 +22,25 @@ setInterval( function() {
 
 }, 1000);
 
-function drawFaceMarks(){
-    let faceElement = document.querySelector("#face");
+// function drawFaceMarks(){
+//     let faceElement = document.querySelector("#face");
     
     
-    for(let i = 0; i < 4; i++){
-        let markElement =document.createElement("div")
-        let degree = i * 90
-        markElement.classList.add("mark")
-        markElement.style.transform = `rotate(${degree}deg)`
-        if(i%2 !== 0){
-            let orientation = Math.round(Math.sin(degree * Math.PI/180))
-            markElement.style.top = "50%"
-            markElement.style.left = `${orientation > 0? 100: 0}%`
-        }else{
-            let orientation = Math.round(Math.cos(degree * Math.PI/180))
-            markElement.style.left = "50%";
-            markElement.style.top = `${orientation > 0? 100 : 0}%`
-        }
-        faceElement.appendChild(markElement)        
-    }
-}
-drawFaceMarks();
+//     for(let i = 0; i < 4; i++){
+//         let markElement =document.createElement("div")
+//         let degree = i * 90
+//         markElement.classList.add("mark")
+//         markElement.style.transform = `rotate(${degree}deg)`
+//         if(i%2 !== 0){
+//             let orientation = Math.round(Math.sin(degree * Math.PI/180))
+//             markElement.style.top = "50%"
+//             markElement.style.left = `${orientation > 0? 100: 0}%`
+//         }else{
+//             let orientation = Math.round(Math.cos(degree * Math.PI/180))
+//             markElement.style.left = "50%";
+//             markElement.style.top = `${orientation > 0? 100 : 0}%`
+//         }
+//         faceElement.appendChild(markElement)        
+//     }
+// }
+// drawFaceMarks();
