@@ -1,5 +1,60 @@
 *{
     padding:0;
     margin:0;
+    box-sizing: border-box;
 }
 
+body{
+    background-color: black;
+}
+div.row{
+    margin: 0;
+    height: 20px;
+}
+div.row div{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+div.brick{
+    background-color: blue;
+}
+
+div.coin{
+    background: url("coin.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+div.empty{
+    background-color: black;
+}
+
+div.cherry{
+    background: url("cherry.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+div#pacman{
+    background: url("packman.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 15px;
+    width:15px;
+    position: absolute;
+}
+
+div#score{
+    border: 1px white solid;
+    color: white;
+    text-align: center;
+    height: 30px;
+    width: 60px;
+    padding-top: 5px;
+}
