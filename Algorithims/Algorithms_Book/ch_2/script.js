@@ -117,3 +117,20 @@ function removeNegatives(arr){
 }
 
 console.log("remove negatives: ", removeNegatives(testArr))
+
+
+function skylineHeight(arr){
+    let newArr = []
+    let heighestOnbe = 0;
+
+    for(let i = 0; i< arr.length ;i++){
+        if(arr[i] > heighestOnbe){
+            newArr.push(arr[i])
+            heighestOnbe = arr[i]
+        }
+    }
+    return newArr
+}
+
+console.log("skyline hight book ex: ",skylineHeight([1,-1,7,3]))
+console.log("skyline hight: ",skylineHeight(testArr))
