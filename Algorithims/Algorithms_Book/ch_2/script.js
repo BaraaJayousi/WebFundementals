@@ -32,7 +32,13 @@ function insertAt(arr,index,value){
         console.warn("Please provide a value less or equal than the array's length")
         return arr;
     }
-    for(let i = arr.length; i > index; i--){
+
+    let arrLen = 0; 
+    while(arr[arrLen]){
+        arrLen++
+    }
+
+    for(let i = arrLen; i > index; i--){
         arr[i] = arr[i-1]
     }
     arr[index] = value;
@@ -40,7 +46,7 @@ function insertAt(arr,index,value){
     return arr;
 }
 
-console.log("inserting at an index: ",insertAt(testArr,2,100))
+console.log("inserting at an index: ",insertAt(testArr,1,100))
 
 
 function removeAt(arr,index){
