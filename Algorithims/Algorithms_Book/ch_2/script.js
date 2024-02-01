@@ -180,3 +180,12 @@ console.log("Binary Search for 119: ",binarySearch(sortedArray,119))
 console.log("Binary Search for 21: ",binarySearch(sortedArray,21))
 console.log("Binary Search for 115: ",binarySearch(sortedArray,115))
 
+
+
+function rotateArr(arr, shiftBy){
+    if(shiftBy % arr.length == 0){
+        return arr
+    }
+
+    
+}
