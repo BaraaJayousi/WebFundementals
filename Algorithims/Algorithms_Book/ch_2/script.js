@@ -134,3 +134,49 @@ function skylineHeight(arr){
 
 console.log("skyline hight book ex: ",skylineHeight([1,-1,7,3]))
 console.log("skyline hight: ",skylineHeight(testArr))
+
+
+let sortedArray = [20,23,44, 70, 102, 113,115,119]
+
+function binarySearch(arr, value){
+    //becuase the array is sorted the last value must be the largest in the array hence the desired value must be smaller
+    //if the last value is smaller than the desired value then it can't be present in the array
+    // if(arr[arr.length -1 ] < value){
+        
+    //     return false
+    // }
+
+    //implemneting the divide and conqoure strategy
+    let low = 0;
+    let high = arr.length -1
+    let mid = Math.floor(low + (high - low)/2)
+    while(mid != low && mid > -1){
+        if(arr[mid] > value){
+            high = mid - 1
+            mid = Math.floor(low + (high - low)/2)
+        }else{
+            low = mid +1;
+            mid = Math.floor(low + (high - low)/2)
+        }
+
+        if(arr[mid] == value){
+            return true
+        }
+    }
+    console.warn("The value %d you're looking for is not present",value)
+    return false;
+}
+
+console.log("%c Binary Search Algorithm","color:red; font-size:42px; font-weight:800")
+
+console.log("ordered array: ", sortedArray)
+
+console.log("Binary Search for 120: ",binarySearch(sortedArray,120))
+console.log("Binary Search for 44: ",binarySearch(sortedArray,44))
+console.log("Binary Search for 102: ",binarySearch(sortedArray,102))
+console.log("Binary Search for 100: ",binarySearch(sortedArray,100))
+console.log("Binary Search for 23: ",binarySearch(sortedArray,23))
+console.log("Binary Search for 119: ",binarySearch(sortedArray,119))
+console.log("Binary Search for 21: ",binarySearch(sortedArray,21))
+console.log("Binary Search for 115: ",binarySearch(sortedArray,115))
+
