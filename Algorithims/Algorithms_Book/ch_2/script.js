@@ -1,4 +1,4 @@
-let testArr = [1,2,3]
+let testArr = [1,2,3,5,6,7,8,9]
 
 console.log("Starting array: " , testArr)
 
@@ -78,4 +78,18 @@ function removeAt(arr,index){
 }   
 
 
-console.log("Removing value At: ", removeAt(testArr, 1))
+console.log("Removing value At idx 1: ", removeAt(testArr, 1))
+
+
+
+function reverseArry(arr){
+    for(let i = 0; i < arr.length/2; i++){
+        let temp = arr[i]
+        arr[i] = arr[arr.length - i - 1]
+        arr[arr.length - 1 - i] = temp
+    }
+
+    return arr;
+}
+
+console.log("reversing arry: ",reverseArry(testArr))
