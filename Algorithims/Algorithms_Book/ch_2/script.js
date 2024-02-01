@@ -60,10 +60,19 @@ function removeAt(arr,index){
         return arr;
     }
 
-    //swap the desired value at the specifed index  with the last index then pop it
+    //swap the desired value at the specifed index  with the last index then pop it **** doesn't keep original order
+    // let temp = arr[index]
+    // arr[index] = arr[arrLen - 1]
+    // arr[arrLen - 1] = temp;
+    // arr.pop();
+
+    //Swap the desired vale to the end of the array without altering the order
     let temp = arr[index]
-    arr[index] = arr[arrLen - 1]
-    arr[arrLen - 1] = temp;
+    for(let i = index; i < arrLen; i++){
+        arr[i]= arr[i+1]
+    }
+
+    arr[arrLen - 1] = temp
     arr.pop();
     return arr
 }   
