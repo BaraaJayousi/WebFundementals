@@ -5,13 +5,19 @@ console.log("Starting array: " , testArr)
 //Push Front
 function pushFront(arr,value){
     //adds a value to the front of the provided array
-    arr[arr.length] = value;
+    // arr[arr.length] = value;
 
+    //implementing the function without using Arry.length
+    let arrLen = 0; 
+    while(arr[arrLen]){
+        arrLen++
+    }
+    arr[arrLen] = value
     return arr;
 }
 
 
-console.log("pusing to fron: ",pushFront(testArr,4))
+console.log("pusing to front: ",pushFront(testArr,420))
 
 function popFront(arr){
     arr.pop();
@@ -35,3 +41,8 @@ function insertAt(arr,index,value){
 }
 
 console.log("inserting at an index: ",insertAt(testArr,2,100))
+
+
+function removeAt(arr,index){
+
+}
