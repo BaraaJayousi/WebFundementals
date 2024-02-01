@@ -1,4 +1,4 @@
-let testArr = [1,2,3,5,6,7,8,9]
+let testArr = [-1,2,3,-5,6,7,8,-9]
 
 console.log("Starting array: " , testArr)
 
@@ -93,3 +93,27 @@ function reverseArry(arr){
 }
 
 console.log("reversing arry: ",reverseArry(testArr))
+
+
+
+function removeNegatives(arr){
+    //check if the last value is negative number
+    if(arr[arr.length -1] < 0){
+        arr.pop();
+    }
+
+    //removes negative numbers without keeping the original order of the array
+    for(let i = 0; i < arr.length;i++){
+        if(arr[i] < 0){
+            let temp = arr[i];
+            arr[i] = arr[arr.length -1];
+            arr[arr.length - 1] = temp;
+
+            arr.pop();
+        }
+    }
+
+    return arr;
+}
+
+console.log("remove negatives: ", removeNegatives(testArr))
