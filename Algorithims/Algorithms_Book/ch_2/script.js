@@ -28,14 +28,14 @@ console.log("poping from front: ",popFront(testArr))
 
 
 function insertAt(arr,index,value){
-    if(index > arr.length){
-        console.warn("Please provide a value less or equal than the array's length")
-        return arr;
-    }
-
     let arrLen = 0; 
     while(arr[arrLen]){
         arrLen++
+    }
+
+    if(index > arrLen){
+        console.warn("Please provide a value less or equal than the array's length")
+        return arr;
     }
 
     for(let i = arrLen; i > index; i--){
@@ -50,5 +50,23 @@ console.log("inserting at an index: ",insertAt(testArr,1,100))
 
 
 function removeAt(arr,index){
+    let arrLen = 0; 
+    while(arr[arrLen]){
+        arrLen++
+    }
 
-}
+    if(index > arrLen - 1){
+        console.warn("Please provide a value less than the array's length")
+        return arr;
+    }
+
+    //swap the desired value at the specifed index  with the last index then pop it
+    let temp = arr[index]
+    arr[index] = arr[arrLen - 1]
+    arr[arrLen - 1] = temp;
+    arr.pop();
+    return arr
+}   
+
+
+console.log("Removing value At: ", removeAt(testArr, 1))
