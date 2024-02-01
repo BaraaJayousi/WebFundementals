@@ -19,3 +19,19 @@ function popFront(arr){
 }
 
 console.log("poping from front: ",popFront(testArr))
+
+
+function insertAt(arr,index,value){
+    if(index > arr.length){
+        console.warn("Please provide a value less or equal than the array's length")
+        return arr;
+    }
+    for(let i = arr.length; i > index; i--){
+        arr[i] = arr[i-1]
+    }
+    arr[index] = value;
+
+    return arr;
+}
+
+console.log("inserting at an index: ",insertAt(testArr,2,100))
