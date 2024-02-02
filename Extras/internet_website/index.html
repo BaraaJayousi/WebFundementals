@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Internet</title>
+</head>
+<body>
+    <header>
+        <img src="images/globe.png" alt="globe image">
+        <h1>The Inter<span>net</span></h1>
+    </header>
+    <main>
+        <div class="top-bar">
+            <h1>The World Wide Web</h1>
+        </div>
+        <section class="d-flex">
+            <article>
+                <div class="d-flex">
+                    <div class="d-flex">
+                        <img src="images/home.png" alt="home icon">
+                        <a href="#">DNS</a>
+                    </div>
+                    <div class="d-flex">
+                        <img src="images/phone.png" alt="phone icon">
+                        <div class="d-flex flex-vertical">
+                            <p>Mon - Fri 9 a.m. - 5 p.m. (EST)</p>
+                            <h2>855.967.3787</h2>
+                            <p>Internation +1.617.963.0555</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <h2>Clients and Servers</h2>
+                <p>Computers connected to the <a href="#">Web</a> are called <strong>clients</strong> and <strong>servers</strong>.</p>
+                <ul>
+                    <li>
+                        <a href="#">Clients</a> are the typical Web user's Internet-connected devices (for example, your computer connected to your Wi-Fi, or your phone connected to your mobile network) and <a href="#">Web-accessing software</a> available on those devices (usually a web browswer like Firefox or Chrome).</li>
+                    <li>
+                        <a href="#">Servers</a> are computers that store <a href="#">webpages</a>, <a href="#">sites</a>, or <a href="#">apps</a>. When a client wants to access a webpage, a copy of the webpage is downloaded from the server onto the client machine to be displayed in the user's web browser.
+                    </li>
+                </ul>
+                <img src="images/client_server.jpg" alt="client server connection">
+                <h2>So What Actually Happes?</h2>
+                <ol>
+                    <li>The browser goes to the <a href="#">DNS server</a> and finds the real address of the <a href="#">server</a> that the website lives on.</li>
+                    <li>The browser sends and <a href="#">HTTP request</a> message to the server asking it to send a copy of the website to the client</li>
+                    <li>If the server approves the client's request, the server sends the client a <a href="#">"200 OK" message</a>, which means "Permission granged! Here you go!", and then starts sendign the website's files to the browser as a sweries of  small chunks.</li>
+                    <li>The browswer assembles the small chunks into a complete website and dispalays it ot you!</li>
+                </ol>
+                <footer class="d-flex">
+                    <img src="images/html.png" alt="The big 3 images HTML CSS Javascript">
+                    <div>
+                        <h2>The Big 3 - HTML, CSS, JavaScript</h2>
+                        <p>While the server can process information in many different languages, the files that they serve to the client are always going to be some combination of HTML, CSS, and JavaScript!</p>
+                        <p>Learn More about the Big 3 <a href="#">here</a>!</p>
+                    </div>
+                </footer>
+            </article>
+            <aside class="d-flex flex-vertical">
+                <div>
+                    <h5>So, what's an <span>Internet?</span></h5>
+                    <h6>An <span>Inter</span>connected <span>Net</span>work of computers all around the world!</h6>
+                </div>
+                <div>
+                    <button class="primary btn">Watch A VIDEO</button>
+                    <button class="secondary btn">MORE RESOURCES</button>
+                </div>
+                <hr/>
+                <div id="ad">
+                    <h1>Reinvent your careen in just 14 weeks</h1>
+                    <img src="images/ninja.png">
+                    <button class="accent btn">Learn More >>></button>
+                </div>
+            </aside>
+        </section>
+    </main>
+</body>
+</html>
